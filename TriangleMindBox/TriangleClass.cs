@@ -68,7 +68,7 @@ namespace TriangleMindBox
         {
             double[] TriangleSide = new double[3] { a, b, c };
             Array.Sort(TriangleSide);
-            if (Math.Abs(TriangleSide[0] * TriangleSide[0] + TriangleSide[1] * TriangleSide[1] - TriangleSide[2] * TriangleSide[2]) != 0)
+            if ((TriangleSide[0] * TriangleSide[0] + TriangleSide[1] * TriangleSide[1] - TriangleSide[2] * TriangleSide[2]) != 0)
             {
                 throw new ArgumentException("it's not right triangle");
             }

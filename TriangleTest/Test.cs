@@ -18,6 +18,7 @@ namespace TriangleTest
         public void TriangleNotRight()
         {
             TriangleClass T = new TriangleClass(1, 2, 3);
+            T.Square();
         }
         [TestMethod]
         [ExpectedException(typeof(ArgumentException))]
